@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/JoyceCosta/nodejs/issues"
   },
-  "homepage": "https://github.com/JoyceCosta/nodejs#readme"
+  "homepage": "https://github.com/JoyceCosta/nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
