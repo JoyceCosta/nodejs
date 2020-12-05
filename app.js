@@ -4,6 +4,6 @@ const routes = require('./routes');
 
 console.log(routes.someText);
 
-cons server = http.createServer(routes.handler);
+const server = http.createServer(routes.handler);
 
 server.listen(3000);
