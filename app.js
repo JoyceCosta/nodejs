@@ -17,4 +17,5 @@ app.use((req, res, next) => {
   res.send('<h1>Hello from Express</h1>');
 });
 
-app.listen(3000);
+const port = process.env.port || 3000;
+app.listen(port, () => console.log(`Server started on port ${port}`));
