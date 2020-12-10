@@ -16,5 +16,4 @@ app.use((req, res, next) => {
   res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
 });
 
-const port = process.env.port || 3000;
-app.listen(port, () => console.log(`Server started on port ${port}`));
+app.listen(3000);
