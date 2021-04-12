@@ -52,7 +52,7 @@ module.exports = class Cart {
         updatedCart.totalPrice =
           updatedCart.totalPrice - productPrice * productQty;
 
-          fs.writeFile(p. JSON.stringify(updatedCart), err => {
+          fs.writeFile(p.JSON.stringify(updatedCart), err => {
             console.log(err);
           });
     });
