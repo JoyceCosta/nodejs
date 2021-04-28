@@ -1,16 +1,10 @@
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize("database", "username", null, {
+const sequelize = new Sequelize("node-complete", "root", "", {
+	host: "127.0.0.1",
 	dialect: "mysql",
-	host: "localhost",
-	port: 3306,
-	protocol: null,
-	logging: false,
-	dialectOptions: {
-		socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
-		supportBigNumbers: true,
-		bigNumberStrings: true,
-	},
+	operatorsAliases: false,
 });
 
 module.exports = sequelize;
+global.sequelize = sequelize;
